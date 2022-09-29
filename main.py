@@ -1,9 +1,7 @@
 from hangman import *
 
 def main():
-    hangman = Hangman()
-    hangman.start_game()
-
+    Hangman()
 
 if __name__ == "__main__":
     main()

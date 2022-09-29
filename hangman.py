@@ -13,6 +13,7 @@ class Hangman():
         with open('words.json') as file: self.file = json.load(file)
         self.word = r.choice(list(self.file.keys()))
         self.guesses_remaining = math.ceil(len(self.word) * 1.25)
+        self.start_game()
 
     def show_scoreboard(self):
         for letter in self.word:
